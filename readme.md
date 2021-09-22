@@ -36,6 +36,7 @@ List all the houses currently available in the database via a GET request to htt
 Add new houses to the database with a POST request to https://yellow-pages-api.netlify.app/houses, using the following request structure:
 
 
+
 + Response 201 (application/json)
 
     + Headers
@@ -133,12 +134,41 @@ Add a new address using the following POST request structure:
 
 <!--/servername/alladdresses-->
 
+## People [/people]
+
+People can only be added to the database for privacy reasons. 
+Use the following POST request structure to add people.
+
+### Add New People To Database [POST]
+
++ Response 201 (application/json)
+
+    + Headers
+
+            Location: /people,
+            Content-Type: application/json
+
+    + Body
+
+            [
+              {
+                name: "John Smith",
+                age: 31,
+                numInHouseHold: 2,
+              },
+              {
+                name: "Someone Smith",
+                age: 34,
+                numInHouseHold: 3,
+              },
+            ]
+
 ## Neighbourhoods By Age Range [/neighbourhoods/neighbourhood?name=name/range?min=x&max=y]
 
 
-Find all people in the neighbourhood by a range of ages.
-
 ### Get People In Neighbourhood Within Age Range [GET]
+
+Find all people in the neighbourhood by a range of ages.
 
 + Response 200 (application/json)
 
