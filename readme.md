@@ -169,6 +169,7 @@ Use the following POST request structure to add people.
 ### Get People In Neighbourhood Within Age Range [GET]
 
 Find all people in the neighbourhood by a range of ages.
+The range is specified by a minimum and maximum integer value.
 
 + Response 200 (application/json)
 
@@ -202,6 +203,7 @@ Find all people in the neighbourhood by a range of ages.
 ### Get People In Neighbourhood By Household Size [GET]
 
 Find all people in the neighbourhood by a range of household sizes.
+The range is specified by a minimum and maximum integer value.
 
 + Response 200 (application/json)
 
